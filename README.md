@@ -9,3 +9,11 @@
 ### 주간 보고
 <img src="img/1주차/주간보고.png" height="600px" alt="week1_report"></img><br/>
 [파일](https://github.com/sunga201/Comento-spring-project/blob/1%EC%A3%BC%EC%B0%A8_%EA%B3%BC%EC%A0%9C/weekly_report/1%EC%A3%BC%EC%B0%A8/%EC%A3%BC%EA%B0%84%EB%B3%B4%EA%B3%A0.pdf)
+
+2주차
+----------
+### API 문서 작성
+[파일](https://github.com/sunga201/Comento-spring-project/tree/2%EC%A3%BC%EC%B0%A8/%EB%AC%B8%EC%84%9C/2%EC%A3%BC%EC%B0%A8-API%20%EB%AC%B8%EC%84%9C%20%EC%9E%91%EC%84%B1)
+
+### 주간 보고
+작성중입니다.
