@@ -8,3 +8,11 @@ target
 .metadata/
 .idea/
 comento.iml
+
+servers/*
+
+springboot-practice/HELP.md
+springboot-practice/target/
+!springboot-practice/mvn/wrapper/maven-wrapper.jar
+!springboot-practice/**/src/main/**/target/
+!springboot-practice/**/src/test/**/target/
