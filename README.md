@@ -19,6 +19,8 @@
     
 * 부서별, 월별 로그인 수
 
+### [파일](https://github.com/sunga201/Comento-spring-project/blob/3%EC%A3%BC%EC%B0%A8/%EB%AC%B8%EC%84%9C/3%EC%A3%BC%EC%B0%A8%20-%20SQL%20%EC%9E%91%EC%84%B1/sql.md)
+
 ### 주간 보고  
 
 <img src="img/3주차/주간보고.png" height="400px" alt="week3_report"></img><br/>
