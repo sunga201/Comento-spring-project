@@ -15,6 +15,7 @@ SW 활용률과 관련된 API 문서를 작성했습니다.
 <img src="img/2주차/주간보고.png" height="400px" alt="week1_result"></img><br/>
 
 <br/>
+
 1주차
 ----------
 ### 실행 결과
