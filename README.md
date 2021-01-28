@@ -6,6 +6,8 @@
 ### 20년도 로그인 수 API
   20년도 로그인 수를 구하는 API를 만들었습니다.
   
+  <img src="img/3주차/년별_로그인_수.png" height="400px" alt="week3_result"></img><br/>
+  
 ### 5가지 쿼리에 대한 SQL문 작성
 * 월별 접속자 수 조회
     
@@ -19,7 +21,7 @@
 
 ### 주간 보고  
 
-<img src="img/3주차/주간보고.png" height="400px" alt="week1_result"></img><br/>
+<img src="img/3주차/주간보고.png" height="400px" alt="week3_report"></img><br/>
 
 2주차
 ----------
@@ -32,7 +34,7 @@ SW 활용률과 관련된 API 문서를 작성했습니다.
 
 ### 주간 보고  
 
-<img src="img/2주차/주간보고.png" height="400px" alt="week1_result"></img><br/>
+<img src="img/2주차/주간보고.png" height="400px" alt="week2_report"></img><br/>
 
 <br/>
 
