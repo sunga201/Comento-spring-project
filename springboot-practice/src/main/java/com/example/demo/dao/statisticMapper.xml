@@ -1,35 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!DOCTYPE mapper
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-    
+        
 <mapper namespace="com.example.demo.dao.StatisticMapper">
- 
+ 	
  	<!-- 년별 로그인 횟수 조회 -->
     <select id="selectYearLogin" parameterType="string" resultType="hashMap">
         select count(*) as totCnt
         from statistic.requestinfo ri
-        where left(ri.createDate, 2) = #{year};
+        where left(ri.createDate, 2) = #{year} 
+        and ri.requestCode = 'L';
     </select>
 
 	<!-- 월별 로그인 횟수 조회 -->
     <select id="selectMonthLogin" parameterType="string" resultType="hashMap">
         select count(*) as totCnt
         from statistic.requestinfo ri
-        where mid(ri.createDate, 3, 2) = #{month};
+        where mid(ri.createDate, 3, 2) = #{month} 
+        and ri.requestCode = 'L';
     </select>  
 
 	<!-- 일일 로그인 횟수 조회 -->
     <select id="selectDayLogin" parameterType="string" resultType="hashMap">
         select count(*) as totCnt
         from statistic.requestinfo ri
-        where mid(ri.createDate, 5, 2) = #{day};
-    </select>    
+        where mid(ri.createDate, 5, 2) = #{day} 
+        and ri.requestCode = 'L';
+    </select> 
+    
+   	<!-- 평균 하루 로그인 횟수 조회 -->
+    <select id="selectAverageLogin" resultType="hashMap">
+        select CONCAT('20', mid(ri.createDate, 1, 2), '-', mid(ri.createDate, 3, 2)) yd,
+        	   count(*) / (DATEDIFF(LAST_DAY(CONCAT('20', mid(ri.createDate, 1, 2), '-', mid(ri.createDate, 3, 2), '-01')), 
+        	   CONCAT('20', mid(ri.createDate, 1, 2), '-', mid(ri.createDate, 3, 2), '-01')) + 1) as totCnt,
+        	   (DATEDIFF(LAST_DAY(CONCAT('20', mid(ri.createDate, 1, 2), '-', mid(ri.createDate, 3, 2), '-01')), 
+        	   CONCAT('20', mid(ri.createDate, 1, 2), '-', mid(ri.createDate, 3, 2), '-01')) + 1)
+        from statistic.requestinfo ri
+        where ri.requestCode = 'L'
+        group by yd;
+    </select>   
+    
+    <!-- 공휴일을 제외한 년, 월별 로그인 횟수 조회 -->
+    <select id="selectExceptHolidayLogin" parameterType="string" resultType="hashMap">
+        select count(*) as totCnt
+        from statistic.requestinfo ri
+        where mid(ri.createDate, 3, 2) = #{month} 
+        and ri.requestCode = 'L';
+    </select>
+    
     
     <!-- 부서별, 월별 로그인 수 -->
     <select id="selectDepartmentMonthLogin" parameterType="string" resultType="hashMap">
         select count(*) as totCnt
         from statistic.requestinfo ri INNER JOIN statistic.user usr ON (ri.userID = usr.userID)
-        where usr.HR_ORGAN = #{dep} and mid(ri.createDate, 3, 2) = #{month};
+        where usr.HR_ORGAN = #{dep} 
+        and mid(ri.createDate, 3, 2) = #{month} 
+        and ri.requestCode = 'L';
     </select>    
 </mapper>
