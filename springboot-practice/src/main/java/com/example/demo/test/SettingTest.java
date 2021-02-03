@@ -1,6 +1,7 @@
 package com.example.demo.test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -38,6 +39,13 @@ public class SettingTest {
         
         return service.dayLoginNum(day);
     }    
+  
+    @ResponseBody 
+    @RequestMapping("/sqlAverageStatistic")
+    public List<HashMap<String, Object>> callByAverage() throws Exception{ 
+        
+        return service.averageLoginNum();
+    }
     
     @ResponseBody 
     @RequestMapping("/sqlDepartmentMonthStatistic")
@@ -45,6 +53,7 @@ public class SettingTest {
         
         return service.departmentMonthLoginNum(dep, month);
     }  
+    
     @RequestMapping("/test") 
     public ModelAndView test() throws Exception{ 
         ModelAndView mav = new ModelAndView("test"); 
