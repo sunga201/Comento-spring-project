@@ -48,6 +48,13 @@ public class SettingTest {
     }
     
     @ResponseBody 
+    @RequestMapping("/sqlExceptHolidayStatistic")
+    public Map<String, Object> callByExceptHoliday(String year, String month) throws Exception{ 
+        
+        return service.exceptHolidayNum(year, month);
+    }  
+    
+    @ResponseBody 
     @RequestMapping("/sqlDepartmentMonthStatistic")
     public Map<String, Object> callByDepartmentMonth(String dep, String month) throws Exception{ 
         

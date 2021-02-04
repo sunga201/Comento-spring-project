@@ -8,6 +8,6 @@ public interface StatisticService {
     public HashMap<String, Object> monthLoginNum(String month); 
     public HashMap<String, Object> dayLoginNum(String day);    
     public List<HashMap<String, Object>> averageLoginNum();
-    //public List<HashMap<String, Object>> exceptHolidayNum(String year, String month);
+    public HashMap<String, Object> exceptHolidayNum(String year, String month);
     public HashMap<String, Object> departmentMonthLoginNum(String dep, String month);
 }
