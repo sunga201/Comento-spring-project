@@ -2,12 +2,22 @@
 코멘토 직무부트캠프를 수강하며 작성한 코드를 모아놓았습니다.
 4주차
 ----------
+
+</br>
+
+2주차에 작성한 API 문서를 수정했습니다.
+### [파일](https://github.com/sunga201/Comento-spring-project/blob/4%EC%A3%BC%EC%B0%A8/%EB%AC%B8%EC%84%9C/4%EC%A3%BC%EC%B0%A8%20-%20API%20%EB%AC%B8%EC%84%9C%20%EC%88%98%EC%A0%95/SW%20%ED%99%9C%EC%9A%A9%20%ED%86%B5%EA%B3%84%20API%20%EA%B0%80%EC%9D%B4%EB%93%9C%20%EB%AC%B8%EC%84%9C.docx)
+
+</br></br>
+
 5가지 기능에 대한 API를 만들었습니다.
  * 월별 접속자 수
  * 일자별 접속자 수
  * 평균 하루 로그인 수
  * 휴일을 제외한 로그인 수
  * 부서별, 월별 로그인 수
+
+</br>
 
 사용한 DB 데이터는 아래와 같습니다.  
 </br>
@@ -59,10 +69,11 @@
 
 ### 주간 보고  
 
-<img src="img/4주차/주간보고1.png" height="400px" alt="week4_report"></img><br/>
-<img src="img/4주차/주간보고2.png" height="400px" alt="week4_report"></img><br/>
-<img src="img/4주차/주간보고3.png" height="400px" alt="week4_report"></img><br/>
+<img src="img/4주차/주간보고1.png" alt="week4_report"></img><br/>
+<img src="img/4주차/주간보고2.png" alt="week4_report"></img><br/>
+<img src="img/4주차/주간보고3.png" alt="week4_report"></img><br/>
 
+### [파일](https://github.com/sunga201/Comento-spring-project/blob/4%EC%A3%BC%EC%B0%A8/%EB%AC%B8%EC%84%9C/weekly_report/4%EC%A3%BC%EC%B0%A8/%EC%A3%BC%EA%B0%84%EB%B3%B4%EA%B3%A0.pdf)
 
 3주차
 ----------
